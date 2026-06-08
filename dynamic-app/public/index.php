@@ -31,28 +31,25 @@ function product_image($gameName)
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KRISNA TOPUP</title>
+    <title>KRISNA TOPUP</title></head>
     <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
     <header class="navbar">
         <a class="brand" href="index.php">
             <img src="assets/logo.svg" alt="KRISNA TOPUP" class="brand-logo">
-            <span>KRISNA TOPUP</span>
+            <span>KRISNA TOPUP</span></h1>
         </a>
         <nav class="nav-links">
-            <a href="index.php">Beranda</a>
-            <a href="dashboard.php">Dashboard</a>
-            <a href="login.php">Login</a>
         </nav>
     </header>
-
+ 
     <section class="promo-banner">
         <div class="container banner-content">
             <div>
                 <p class="hero-badge">PROMO TOP-UP DIAMOND</p>
                 <h2>Harga terbaik & kirim instan untuk semua game populer.</h2>
-                <p>Dapatkan harga spesial, tampilan produk rapi, dan order cepat lewat WhatsApp dengan dukungan 24/7.</p>
+                <p>Dapatkan harga spesial, berlangganan promo, dan order cepat lewat WhatsApp dengan dukungan 24/7.</p>
             </div>
             <a href="https://wa.me/6283116854467?text=Halo%20Admin%20KRISNA%20TOPUP,%20saya%20mau%20tanya%20promo" target="_blank" class="button button-primary">Chat Sekarang</a>
         </div>
@@ -61,9 +58,9 @@ function product_image($gameName)
     <main>
         <section class="hero container">
             <div class="hero-copy">
-                <p class="hero-badge">TOP-UP GAME MODERN</p>
-                <h1>Top-up cepat, aman, dan terlihat profesional.</h1>
-                <p class="hero-text">Temukan produk game terbaik dengan tampilan katalog modern, ada gambar produknya, dan langsung order lewat WhatsApp.</p>
+                <p class="hero-badge">TOP-UP GAME</p>
+                <h1>Top-up cepat, aman, dan murah.</h1>
+                <p class="hero-text">Temukan produk game terbaik, promo tersedia, dan langsung order lewat WhatsApp.</p>
                 <div class="hero-actions">
                     <form method="GET" class="search-form">
                         <input type="search" name="search" placeholder="Cari game atau produk..." value="<?= e($search) ?>">
@@ -76,7 +73,7 @@ function product_image($gameName)
                 <div class="hero-card">
                     <span class="hero-card-tag">Produk Unggulan</span>
                     <h2>Lebih cepat dapatkan top-up dan akun premium.</h2>
-                    <p>Semua produk tampil dengan preview modern dan informasi harga yang jelas.</p>
+                    <p>Top-Up cepat dan beribu stok akun sultan.</p>
                 </div>
             </div>
         </section>
@@ -84,15 +81,15 @@ function product_image($gameName)
         <section class="container feature-grid">
             <article class="feature-card">
                 <h3>Diamond & Top-up Lengkap</h3>
-                <p>Semua produk ditampilkan dalam kotak rapi dengan gambar, harga, dan jenis game yang jelas.</p>
+                <p>Nikmati layanan top-up diamond dan voucher game terlengkap dengan tampilan produk yang rapi, info stok real-time, dan sistem order langsung via WhatsApp tanpa ribet!.</p>
             </article>
             <article class="feature-card">
                 <h3>Stok Tersedia</h3>
-                <p>Setiap produk dilengkapi label stok dan status agar pelanggan tidak perlu bingung.</p>
+                <p>Cari game favoritmu dengan mudah lewat katalog produk kami yang bersih dan transparan. Cek status stok yang selalu up-to-date, lalu klik untuk order langsung lewat WhatsApp. Cepat dan praktis!.</p>
             </article>
             <article class="feature-card">
                 <h3>Order Mudah</h3>
-                <p>Langsung chat WhatsApp dan pesan produk tanpa ribet, sesuai tampilan web topup profesional.</p>
+                <p>Order Cepat Langsung via WhatsApp! Top-up game favoritmu sekarang, tanpa ribet!</p>
             </article>
         </section>
 
@@ -140,7 +137,7 @@ function product_image($gameName)
     <footer class="site-footer container">
         <div>
             <p class="footer-title">KRISNA TOPUP</p>
-            <p>Layanan top-up game modern dengan tampilan katalog produk yang segar dan mudah digunakan.</p>
+            <p>Layanan top-up game</p>
         </div>
         <div class="footer-links">
             <a href="https://wa.me/6283116854467" target="_blank">WhatsApp: 0831-1685-4467</a>
