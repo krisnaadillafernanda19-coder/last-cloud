@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio CV - Krisna Adilla Fernanda</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
+html{scroll-behavior:smooth}
+body{
+background:linear-gradient(135deg,#0f172a,#312e81,#7c3aed,#2563eb);
+background-attachment:fixed;
+overflow-x:hidden;
+}
+.navbar{
+position:fixed;top:20px;left:50%;transform:translateX(-50%);
+background:rgba(255,255,255,.12);
+backdrop-filter:blur(15px);
+padding:15px 28px;border-radius:50px;z-index:1000;
+display:flex;gap:20px;
+}
+.navbar a{color:white;text-decoration:none;font-weight:500}
+.navbar a:hover{opacity:.8}
+
+section{
+min-height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+padding:120px 8%;
+}
+
+.hero{
+text-align:center;
+color:white;
+max-width:900px;
+}
+.hero img{
+width:220px;height:220px;border-radius:50%;
+border:6px solid white;
+object-fit:cover;
+margin-bottom:25px;
+}
+.hero h1{font-size:4rem}
+.hero p{font-size:1.3rem;margin:20px 0;opacity:.9}
+.btn{
+display:inline-block;
+padding:15px 30px;
+background:white;
+color:#312e81;
+border-radius:40px;
+text-decoration:none;
+font-weight:600;
+}
+
+.wrapper{
+max-width:1200px;
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:80px;
+align-items:center;
+}
+
+.image img{
+width:100%;
+border-radius:25px;
+box-shadow:0 20px 50px rgba(0,0,0,.3);
+}
+
+.card{
+background:rgba(255,255,255,.12);
+backdrop-filter:blur(15px);
+padding:40px;
+border-radius:25px;
+color:white;
+}
+
+.card h2{
+font-size:3rem;
+margin-bottom:20px;
+}
+
+.card p,.card li{
+line-height:1.9;
+font-size:1.1rem;
+}
+
+.skills{
+display:flex;
+flex-wrap:wrap;
+gap:12px;
+margin-top:20px;
+}
+
+.skill{
+background:white;
+color:#312e81;
+padding:10px 18px;
+border-radius:999px;
+font-weight:600;
+}
+
+footer{
+padding:40px;
+text-align:center;
+color:white;
+}
+
+@media(max-width:900px){
+.wrapper{
+grid-template-columns:1fr;
+}
+.hero h1{
+font-size:2.8rem;
+}
+.card h2{
+font-size:2rem;
+}
+}
+</style>
+</head>
+<body>
+
+<nav class="navbar">
+<a href="#home">Home</a>
+<a href="#tentang">Tentang</a>
+<a href="#pendidikan">Pendidikan</a>
+<a href="#pengalaman">Pengalaman</a>
+<a href="#kemampuan">Skill</a>
+<a href="#organisasi">Organisasi</a>
+<a href="#karir">Karir</a>
+</nav>
+
+<section id="home">
+<div class="hero">
+<img src="foto-krisna.jpg" alt="Foto">
+<h1>Krisna Adilla Fernanda</h1>
+<p>Mahasiswa Informatika • Web Developer Enthusiast</p>
+<a href="#tentang" class="btn">Jelajahi Portfolio</a>
+</div>
+</section>
+
+<section id="tentang">
+<div class="wrapper">
+<div class="image"><img src="https://picsum.photos/700/500?random=1"></div>
+<div class="card">
+<h2>Tentang Saya</h2>
+<p>Saya adalah mahasiswa Informatika yang memiliki minat pada pengembangan web, teknologi digital, dan pengembangan solusi modern. Saya senang belajar hal baru serta membangun proyek yang bermanfaat bagi banyak orang.</p>
+</div>
+</div>
+</section>
+
+<section id="pendidikan">
+<div class="wrapper">
+<div class="card">
+<h2>Pendidikan</h2>
+<p><b>UIN Siber Syekh Nurjati Cirebon</b><br>S1 Informatika (2023 - Sekarang)</p><br>
+<p><b>SMK Al Jabbar Ciledug</b><br>Mekatronika (2020 - 2023)</p>
+</div>
+<div class="image"><img src="https://picsum.photos/700/500?random=2"></div>
+</div>
+</section>
+
+<section id="pengalaman">
+<div class="wrapper">
+<div class="image"><img src="https://picsum.photos/700/500?random=3"></div>
+<div class="card">
+<h2>Pengalaman</h2>
+<ul>
+<li>Operator Produksi - PT. Laksana Karoseri</li>
+<li>Mengoperasikan alat produksi dan perakitan.</li>
+<li>Admin & Owner Bisnis Akun Game.</li>
+<li>Mengelola transaksi, pelanggan dan promosi media sosial.</li>
+</ul>
+</div>
+</div>
+</section>
+
+<section id="kemampuan">
+<div class="wrapper">
+<div class="card">
+<h2>Kemampuan</h2>
+<div class="skills">
+<span class="skill">HTML</span>
+<span class="skill">CSS</span>
+<span class="skill">JavaScript</span>
+<span class="skill">Python</span>
+<span class="skill">Java</span>
+<span class="skill">GitHub</span>
+<span class="skill">Excel</span>
+<span class="skill">Team Work</span>
+</div>
+</div>
+<div class="image"><img src="https://picsum.photos/700/500?random=4"></div>
+</div>
+</section>
+
+<section id="organisasi">
+<div class="wrapper">
+<div class="image"><img src="https://picsum.photos/700/500?random=5"></div>
+<div class="card">
+<h2>Organisasi</h2>
+<p>Himpunan Mahasiswa Informatika (2025-2026). Membantu administrasi, kolaborasi program kerja, dan pengembangan kepemimpinan.</p>
+</div>
+</div>
+</section>
+
+<section id="karir">
+<div class="wrapper">
+<div class="card">
+<h2>Tujuan Karir</h2>
+<p>Menjadi Web Developer dan Profesional IT yang mampu menciptakan solusi digital modern, inovatif, dan berdampak positif bagi masyarakat.</p>
+</div>
+<div class="image"><img src="https://picsum.photos/700/500?random=6"></div>
+</div>
+</section>
+
+<footer>
+© Krisna Adilla Fernanda - Portfolio CV Modern
+</footer>
+
+</body>
+</html>

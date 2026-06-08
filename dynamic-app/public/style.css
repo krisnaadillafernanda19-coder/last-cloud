@@ -1,0 +1,116 @@
+:root {
+  /* Dark Mode Gaming Palette */
+  --bg: #0f172a;
+  --surface: #1e293b;
+  --surface-soft: #334155;
+  --primary: #3b82f6;      /* Blue Neon */
+  --primary-glow: rgba(59, 130, 246, 0.5);
+  --accent: #f59e0b;       /* Gold/Orange for actions */
+  --danger: #ef4444;
+  --success: #22c55e;
+  --text: #f8fafc;
+  --muted: #94a3b8;
+  --border: #334155;
+  --shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: 'Inter', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+/* Glassmorphism Effect */
+.auth-card, .panel {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(10px);
+}
+
+.brand-mark {
+  background: linear-gradient(135deg, var(--primary), #1d4ed8);
+  color: #fff;
+  font-weight: 800;
+  border-radius: 12px;
+  box-shadow: 0 0 15px var(--primary-glow);
+}
+
+input, textarea, select {
+  background: #0f172a;
+  border: 1px solid var(--border);
+  color: white;
+  padding: 14px;
+  border-radius: 10px;
+}
+
+input:focus {
+  border-color: var(--primary);
+  outline: none;
+  box-shadow: 0 0 0 2px var(--primary-glow);
+}
+
+.button {
+  transition: all 0.3s ease;
+  padding: 12px 20px;
+  font-weight: 700;
+  border-radius: 10px;
+}
+
+.button-primary {
+  background: var(--primary);
+  color: white;
+  box-shadow: 0 4px 12px var(--primary-glow);
+}
+
+.button-primary:hover {
+  transform: translateY(-2px);
+  background: #2563eb;
+}
+
+/* Table Gaming Style */
+table {
+  background: var(--surface);
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+th {
+  background: #0f172a;
+  color: var(--primary);
+}
+
+tr:hover {
+  background: #2d3748;
+}
+
+.badge {
+  background: rgba(59, 130, 246, 0.1);
+  color: var(--primary);
+  border: 1px solid var(--primary);
+}
+
+/* Tambahan untuk mempercantik */
+h1, h2 {
+  letter-spacing: -0.02em;
+}
+
+.topbar {
+  background: rgba(15, 23, 42, 0.8);
+  border-bottom: 1px solid var(--border);
+}
+
+/* Animasi sederhana */
+.auth-card {
+  animation: fadeIn 0.5s ease-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
