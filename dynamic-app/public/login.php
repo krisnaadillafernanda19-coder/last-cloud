@@ -17,7 +17,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     } elseif (attempt_login($username, $password)) {
         redirect('dashboard.php');
     } else {
-        $error = 'Username atau password salah.';
+        $error = 'Username, password salah.';
     }
 }
 ?>
