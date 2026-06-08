@@ -18,10 +18,6 @@ $products = $stmt->fetchAll();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KRISNA TOPUP</title>
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 36feb4746f8944fd83156951d89dd17182437534
     <style>
         body { font-family: 'Segoe UI', Tahoma, sans-serif; background-color: #f4f7f6; margin: 0; padding-bottom: 30px; color: #333; }
         .navbar { background: #333; padding: 15px; display: flex; gap: 20px; margin-bottom: 20px; }
@@ -37,8 +33,6 @@ $products = $stmt->fetchAll();
         tr:hover { background-color: #f1f1f1; }
         .button-primary { background: #28a745; color: white; padding: 8px 12px; border-radius: 5px; text-decoration: none; font-size: 14px; }
     </style>
-<<<<<<< HEAD
-=======
 </head>
 <body>
 
@@ -84,9 +78,7 @@ $products = $stmt->fetchAll();
 
 </body>
 </html>
-=======
     <link rel="stylesheet" href="style.css">
->>>>>>> 36feb4746f8944fd83156951d89dd17182437534
 </head>
 <body>
 
@@ -132,4 +124,3 @@ $products = $stmt->fetchAll();
 
 </body>
 </html>
->>>>>>> df96bc9f03221255fd3eb8a7b46a5c07f7fcb967
