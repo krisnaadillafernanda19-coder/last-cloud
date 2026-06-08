@@ -32,7 +32,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <body class="auth-page">
     <main class="auth-card">
         <div class="brand">
-            <span class="brand-mark">KT</span>
+            <img src="assets/logo.svg" alt="KRISNA TOPUP" class="brand-logo">
             <div>
                 <h1>Login Admin</h1>
                 <p>Kelola Produk KRISNA TOPUP</p>

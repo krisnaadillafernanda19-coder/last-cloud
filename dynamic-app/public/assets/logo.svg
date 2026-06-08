@@ -1,0 +1,13 @@
+<svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="logo-gradient" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#8b5cf6"/>
+      <stop offset="100%" stop-color="#ec4899"/>
+    </linearGradient>
+  </defs>
+  <rect x="0" y="0" width="120" height="120" rx="30" fill="url(#logo-gradient)"/>
+  <path d="M37 78C37 76.3431 38.3431 75 40 75H46C47.6569 75 49 76.3431 49 78V92C49 93.6569 47.6569 95 46 95H40C38.3431 95 37 93.6569 37 92V78Z" fill="white"/>
+  <path d="M70 78C70 76.3431 71.3431 75 73 75H79C80.6569 75 82 76.3431 82 78V92C82 93.6569 80.6569 95 79 95H73C71.3431 95 70 93.6569 70 92V78Z" fill="white"/>
+  <path d="M33 42C33 36.4772 37.4772 32 43 32H77C82.5228 32 87 36.4772 87 42V48C87 54.6274 81.6274 60 75 60H45C38.3726 60 33 54.6274 33 48V42Z" fill="white" opacity="0.96"/>
+  <path d="M45 42H75V48H45V42Z" fill="#8b5cf6"/>
+</svg>

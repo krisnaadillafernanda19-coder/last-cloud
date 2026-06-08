@@ -1,0 +1,24 @@
+<svg width="400" height="280" viewBox="0 0 400 280" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="placeholder-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#eef2ff"/>
+      <stop offset="100%" stop-color="#fdf2f8"/>
+    </linearGradient>
+    <linearGradient id="controller-grad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#8b5cf6"/>
+      <stop offset="100%" stop-color="#f43f5e"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="280" rx="32" fill="url(#placeholder-bg)"/>
+  <circle cx="110" cy="90" r="50" fill="#c7d2fe"/>
+  <circle cx="290" cy="100" r="46" fill="#fde2e8"/>
+  <path d="M66 170C66 154.767 78.767 142 94 142H306C321.233 142 334 154.767 334 170V188C334 203.233 321.233 216 306 216H94C78.767 216 66 203.233 66 188V170Z" fill="white"/>
+  <path d="M130 150C130 145.582 133.582 142 138 142H162C166.418 142 170 145.582 170 150V178C170 182.418 166.418 186 162 186H138C133.582 186 130 182.418 130 178V150Z" fill="url(#controller-grad)"/>
+  <path d="M232 150C232 145.582 235.582 142 240 142H264C268.418 142 272 145.582 272 150V178C272 182.418 268.418 186 264 186H240C235.582 186 232 182.418 232 178V150Z" fill="url(#controller-grad)"/>
+  <circle cx="150" cy="162" r="8" fill="#ffffff"/>
+  <circle cx="255" cy="162" r="8" fill="#ffffff"/>
+  <rect x="190" y="178" width="20" height="36" rx="10" fill="#c7d2fe"/>
+  <rect x="210" y="178" width="20" height="36" rx="10" fill="#c7d2fe" opacity="0.75"/>
+  <path d="M158 104C158 95.1634 164.163 89 173 89H227C235.837 89 242 95.1634 242 104V117H158V104Z" fill="#e0e7ff"/>
+  <path d="M168 69C168 59.0589 176.059 51 186 51H214C223.941 51 232 59.0589 232 69V89H168V69Z" fill="#eef2ff"/>
+</svg>

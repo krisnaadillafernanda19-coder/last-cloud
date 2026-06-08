@@ -9,6 +9,21 @@ $pdo = db();
 $message = get_flash('success');
 $error = get_flash('error');
 
+function product_image($gameName)
+{
+    $map = [
+        'Mobile Legends' => 'assets/product-placeholder.svg',
+        'Free Fire' => 'assets/product-placeholder.svg',
+        'PUBG' => 'assets/product-placeholder.svg',
+        'Roblox' => 'assets/product-placeholder.svg',
+        'Clash of Clans' => 'assets/product-placeholder.svg',
+        'Honor of Kings' => 'assets/product-placeholder.svg',
+        'E-Football' => 'assets/product-placeholder.svg',
+    ];
+
+    return $map[$gameName] ?? 'assets/product-placeholder.svg';
+}
+
 // Mengambil data produk dari database
 $stmt = $pdo->query(
     "SELECT id, game_name, product_type, title, description, price, stock, created_at
@@ -57,34 +72,38 @@ $products = $stmt->fetchAll();
                     <p>Silakan tambahkan produk baru untuk memulai.</p>
                 </div>
             <?php else: ?>
-                <div class="table-wrap">
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Game</th>
-                                <th>Tipe</th>
-                                <th>Nama Produk</th>
-                                <th>Harga</th>
-                                <th>Stok</th>
-                                <th>Aksi</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <?php foreach ($products as $p): ?>
-                                <tr>
-                                    <td><?= e($p['game_name']) ?></td>
-                                    <td><span class="badge"><?= e($p['product_type']) ?></span></td>
-                                    <td><strong><?= e($p['title']) ?></strong></td>
-                                    <td>Rp <?= number_format($p['price'], 0, ',', '.') ?></td>
-                                    <td><?= e($p['stock']) ?></td>
-                                    <td class="actions">
-                                        <a href="edit.php?id=<?= (int) $p['id'] ?>">Edit</a>
-                                        <a href="delete.php?id=<?= (int) $p['id'] ?>" class="danger">Hapus</a>
-                                    </td>
-                                </tr>
-                            <?php endforeach; ?>
-                        </tbody>
-                    </table>
+                <div class="dashboard-grid">
+                    <?php foreach ($products as $p): ?>
+                        <article class="product-card-admin">
+                            <div class="card-image-wrap">
+                                <img src="<?= e(product_image($p['game_name'])) ?>" alt="<?= e($p['game_name']) ?>" class="card-image">
+                                <div class="card-badge">
+                                    <img src="assets/diamond-icon.svg" alt="Diamond" class="icon icon-diamond">
+                                    <span><?= e(ucfirst($p['product_type'])) ?></span>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="card-head">
+                                    <div>
+                                        <h3><?= e($p['title']) ?></h3>
+                                        <p class="card-game"><?= e($p['game_name']) ?></p>
+                                    </div>
+                                    <div class="price">Rp <?= number_format($p['price'], 0, ',', '.') ?></div>
+                                </div>
+                                <p class="card-description"><?= e($p['description'] ?: 'Top-up cepat dan aman untuk pemain game.') ?></p>
+                            </div>
+                            <div class="card-footer">
+                                <span class="stock-pill">
+                                    <img src="assets/stock-icon.svg" alt="Stok" class="icon">
+                                    <?= e($p['stock']) ?> stok
+                                </span>
+                                <div class="card-actions">
+                                    <a href="edit.php?id=<?= (int) $p['id'] ?>" class="button button-secondary">Edit</a>
+                                    <a href="delete.php?id=<?= (int) $p['id'] ?>" class="button button-danger">Hapus</a>
+                                </div>
+                            </div>
+                        </article>
+                    <?php endforeach; ?>
                 </div>
             <?php endif; ?>
         </section>
