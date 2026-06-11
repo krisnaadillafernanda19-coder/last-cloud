@@ -140,7 +140,7 @@ $game_icons = [
             <?= e(current_user()['full_name']) ?>
         </div>
         <a href="logout.php" class="button button-secondary" style="padding:8px 16px;">
-            🚪 Logout
+            🚪 Keluar
         </a>
     </div>
 </header>
